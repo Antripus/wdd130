@@ -1,29 +1,35 @@
-body {
-    text-align: center;
-}
-nav {
-    background-color: steelblue;
-    padding: 10px;
-}/*padding es relleno*/
+
 a{
     color: white;
     margin: 40px;
+    font-size: 1.5em;
 }
 h1 {
     color: steelblue;
+    text-align: center;
 }
 img{
-    width: 800px;
+    width: 80%;
     border: 4px solid steelblue;
+    display: block;
+    margin: 0 auto;
 }
 p{
     padding: 10px;
+    width: 100%;
 }
-footer{
-    background-color: steelblue;
-    color: white;
+main p{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
 }
 
+nav, footer {/*selector seria el footer y el nav */
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 10px; /*padding es relleno*/
+}
 .main-para {
     font-size: 1.5em;
     line-height: 1.5em;
@@ -31,5 +37,15 @@ footer{
 
 #active {
     background-color: whitesmoke;
+    color: steelblue;
+}
+
+footer p { /*selector desendiente, seria el p dentro del footer*/
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.505);
     color: steelblue;
 }
