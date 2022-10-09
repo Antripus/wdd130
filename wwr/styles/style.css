@@ -6,6 +6,9 @@
     margin: 0 auto;
 }
 
+footer .social img{
+    padding-top: 15px;
+}
 nav, a{
     text-align: center;
     color: #cadef3;
@@ -131,11 +134,6 @@ footer a:hover{
     color: #9c060a;
     background-color: #cadef3;
 }
-footer .social img{
-    padding-top: 15px;
-}
-
-
 
 
 .home-title {
