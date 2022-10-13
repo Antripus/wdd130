@@ -5,7 +5,17 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-
+.top_rivers-bool-text{
+    /* background-color: #cadef3a1;*/
+    background-color: #0a4b72;
+    color: #cadef3;
+    text-decoration: none;
+    font-family: "Gloria Hallelujah", "Reem Kufi Ink", sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+ }
 footer .social img{
     padding-top: 15px;
 }
@@ -218,10 +228,134 @@ body{
 
 
 /* para ver los bloques  
-footer a {
+*  {
     border: 2px solid red;
 }
 */ 
+
+
+
+/* ---------------------top_rivers CSS ---------------------  */ 
+
+.Top_rivers-H5{
+    text-align: center;
+    font-size: 42px;
+    color: #9c060a;
+    font-family: "Gloria Hallelujah", "Reem Kufi Ink", sans-serif;
+}
+.Top_rivers-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+   
+    text-decoration: none;
+    font-family: "Gloria Hallelujah", "Reem Kufi Ink", sans-serif;
+
+    /*padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;*/
+}
+
+.Idaho-card{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #0a4b72;
+    border: 5px solid black;
+}
+.Utah-card{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #0a4b72;
+    border: 5px solid black;
+    
+    
+}
+.Arizona-card{
+    grid-column: 1/5;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #0a4b72;
+    border: 5px solid black;
+}
+
+.Top_rivers-card-H1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 20px;
+    
+    align-self: center; 
+    color: #9c060a;
+    background-color: #cadef3;
+        
+}
+.Top_rivers-card-p-1{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 14px;
+    color: #cadef3;
+    
+}
+.Top_rivers-card-p-2{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    font-size: 14px;
+    color: #cadef3;
+}
+.Top_rivers-card-p-3{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    font-size: 14px;
+    color: #cadef3;
+}
+.Top_rivers-card-img{
+    grid-column: 3/5;
+    grid-row: 1/5;
+    border: 10px solid #0a4b72;
+    transition: transform .5s;
+    
+    width: 100%;
+}
+
+#Top_rivers-BookNow-Utah ,#Top_rivers-BookNow-Idaho, #Top_rivers-BookNow-Arizona{
+    grid-column: 3/5;
+    grid-row: 2/3;
+
+    
+}
+
+
+.top_rivers-book-text{
+    background-color: #cadef3a1;
+    color: #9c060a;
+    text-decoration: none;
+    font-family: "Gloria Hallelujah", "Reem Kufi Ink", sans-serif;
+    font-size: 18px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------top_rivers CSS - END ---------------------  */ 
+
 
 /*El media debe ser lo ultimo */
 
