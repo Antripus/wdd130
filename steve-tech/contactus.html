@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +36,7 @@
         </div>
 
         <main class="Form">
-            <form action="/my-handling-form-page" method="post">
+            <form id="form-card" action="/my-handling-form-page" method="post">
                 <ul>
                     <li>
                         <label for="name">Name:</label>
@@ -45,15 +47,30 @@
                         <input type="email" id="mail" name="user_email" />
                     </li>
                     <li>
-                        <label for="msg">Message:</label>
+                        <label for="phone">Phone:</label>
+                        <input type="phone" id="phone" name="user_phone" />
+                    </li>
+                    <li>
+                        <label for="msg">Message: (Explain the problem and the service that you are looking for)</label>
                         <textarea id="msg" name="user_message"></textarea>
                     </li>
                     </ul>
-                    <li class="button">
-                        <button type="submit">Send your message</button>
+                    <li class="button"><button type="submit">Send your message</button>
                     </li>
             </form>
-            <div id="feedback"></div>
+            <div id="feedback">feedback</div>
+
+            <!-- Add icon library -->
+        
+            <div class="card">
+            <img src="images/Esteban.jpg" alt="Esteban" style="width:100%">
+            <h1>Esteban Garcia</h1>
+            <p class="Position">CEO & Founder</p>
+            <p>UADE - BYUI</p>
+            <a href="https://www.linkedin.com/in/diego-esteban-garcia-5b43a924/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/esteban.garcia.35574/"><i class="fa fa-facebook"></i></a>
+            
+            </div>
         </main>
 
         <footer>
@@ -62,10 +79,16 @@
             <p> <a href="site-plan.html"> SitePlan </a></p>
             <p> <a href="contactus.html"> Contact Us </a></p>
             
-            <div id="social">
-                <a href=""> facebook</a>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"> 
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
 
-                <a href=""> instagram</a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+
+
             </div>
         </footer>
         
