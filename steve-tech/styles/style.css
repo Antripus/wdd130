@@ -82,12 +82,14 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.contactusBotton:hover {
+
+
+.contactusBotton:hover, .contactusBotton-Analytics:hover {
     background-color: #000B14;
     color: #FFDE59;
 }
 
-.WhatWeCanDo-card , .WhoWeAre-card{
+.WhatWeCanDo-card , .WhoWeAre-card {
     background-color: #2478BC; /* white */
     color: #000B14;
     line-height: 1.5em;
@@ -97,6 +99,8 @@ nav a:hover {
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
 }
+
+
 
 p { /****************************** checkear ********************************/
     font-family:  "Reem Kufi Ink", "Robotox", sans-serif;
@@ -132,15 +136,23 @@ h2 { /****************************** checkear ********************************/
     display: grid;
     grid-template-columns: 1fr 4fr;
     border: 2px solid #000B14;
+    font-family: "Reem Kufi Ink", "Robotox", sans-serif;
+    font-size: 2em;
+    padding-bottom: 15px;
 }
 .WhatWeCanDo-card {
-    margin: 50px 0;   
+       
     grid-column: 3/9;
     grid-row: 3/4;
     padding: 20px;
     z-index: 1;
     box-shadow: 5px 5px 10px #6f7364;
     border: 2px solid #000B14;
+
+    font-family: "Reem Kufi Ink", "Robotox", sans-serif;
+    font-size: 1.3;
+    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .card-img {
@@ -151,8 +163,7 @@ h2 { /****************************** checkear ********************************/
 .WhoWeAre-msg{
     grid-column: 2/6;
     align-items: center;
-    align-content: center;
-    
+    align-content: center; 
 }
 
 .card-img {
@@ -176,7 +187,7 @@ h2 { /****************************** checkear ********************************/
 }
 
 .icon{
-    width: 7em;
+    width: 6em;
     padding-top: 10px;
 }
 
@@ -377,6 +388,124 @@ form {
         color: #FFDE59;;
       }
 
+      /*----------------------- ----------------------*/
+    .Title-Page{
+        font-family: "Reem Kufi Ink", "Robotox", sans-serif;
+        font-size: 2em;
+        padding-bottom: 15px;
+        color: #FFDE59;
+        grid-column: 1/11;
+        grid-row: 1/5;
+        height: 200px;
+    }
+
+
+    .Analytics {
+       
+        grid-column: 2/10;
+        grid-row: 1/4;
+        margin-top: 600px;
+        z-index: 1;
+        box-shadow: 5px 5px 10px #6f7364;
+        border: 2px solid #000B14;
+    
+        font-family: "Reem Kufi Ink", "Robotox", sans-serif;
+        font-size: 1.3;
+        padding-bottom: 15px;
+        padding-bottom: 30px;
+        
+        color: #000B14;
+        line-height: 1.5em;
+        padding: 35px;
+
+        background-color: #2478BC; /* white */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+    }
+    .Automation {
+       
+        grid-column: 2/10;
+        grid-row: 1/4;
+        margin-top: 400px;
+        z-index: 1;
+        box-shadow: 5px 5px 10px #6f7364;
+        border: 2px solid #000B14;
+    
+        font-family: "Reem Kufi Ink", "Robotox", sans-serif;
+        font-size: 1.3;
+        padding-bottom: 15px;
+        padding-bottom: 30px;
+        
+        color: #000B14;
+        line-height: 1.5em;
+        padding: 35px;
+
+        background-color: #2478BC; /* white */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+    }
+
+    .Analytics-msg{
+        grid-column: 2/6;
+        grid-row: 1/2;
+        align-items: center;
+        align-content: center; 
+        font-family: "Reem Kufi Ink","Robotox",  sans-serif;
+        font-size: 24px;
+        padding: 10px;
+    }
+    .card-img-Analytics2{
+        border: 5px solid #FFDE59;
+        width: 400px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+    .card-img-Analytics1{
+        border: 5px solid #FFDE59;
+        width: 400px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 60%;
+        margin-left: -40%;
+        z-index: 1;
+    }
+
+    .contactusBotton-Analytics{
+        background-color: #FFDE59;
+        color: #0F6281;
+        text-decoration: none;
+        font-family: "Reem Kufi Ink","Robotox",  sans-serif;
+        font-size: 18px;
+        padding: 15px 30px;
+        margin-top: 50px;
+        border-radius: 5px;
+        float: right;
+        margin-right: 40px;
+    }
+
+
+      /* Container holding the image and the text */
+    .container-img {
+        position: relative;
+        height: 200px;
+    }
+    .img-block{
+        height: 300px;
+    }
+    
+    /* Bottom right text */
+    .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 /*
 *  {
     border: 1px solid red;
