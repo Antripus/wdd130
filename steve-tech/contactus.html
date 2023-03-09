@@ -30,40 +30,39 @@
             <form id="form-card" action="/my-handling-form-page" method="post">
                 <ul>
                     <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" />
+                        <img src="images/TarjetaPresentacion.jpg" alt="Esteban" style="width:100%">
                     </li>
-                    <li>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_email" />
-                    </li>
-                    <li>
-                        <label for="phone">Phone:</label>
-                        <input type="phone" id="phone" name="user_phone" />
-                    </li>
-                    <li>
-                        <label for="msg">Message: (Explain the problem and the service that you are looking for)</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                    </ul>
-                    <li class="button"><button type="submit">Send your message</button>
-                    </li>
+            
+                    <li class="buttonSendWhatsApp"><button type="button" onclick="sendWhatsApp()">Send WhatsApp</button></li>
+                    <li class="buttonSendEmail"><button type="button" onclick="sendEmail()">Send Email</button></li>
+                </ul>
             </form>
+            
+            <script>
+                function sendWhatsApp() {
+                    window.open("https://wa.me/whatsappphonenumber"); // Reemplaza "whatsappphonenumber" por el número de WhatsApp al que deseas enviar el mensaje
+                }
+            
+                function sendEmail() {
+                    window.open("mailto:emailaddress"); // Reemplaza "emailaddress" por la dirección de correo electrónico a la que deseas enviar el mensaje
+                }
+            </script>
+            
+            
+            
             <div id="feedback">feedback</div>
 
-            <!-- Add icon library -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <!-- Add icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-            <div class="card">
-            <img src="images/Esteban.jpg" alt="Esteban" style="width:100%">
-            <h1>Esteban Garcia</h1>
-            <p class="Position">CEO & Founder</p>
-            <p >UADE - BYUI</p>
-            <a href="https://www.linkedin.com/in/diego-esteban-garcia-5b43a924/"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/esteban.garcia.35574/"><i class="fa fa-facebook"></i></a>
-            
+                <div class="card">
+                <img src="images/Esteban.jpg" alt="Esteban" style="width:100%">
+                <p class="Position">CEO & Founder</p>
+                <p >UADE - BYUI</p>
+                <a href="https://www.linkedin.com/in/diego-esteban-garcia-5b43a924/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/esteban.garcia.35574/"><i class="fa fa-facebook"></i></a>
+                
             </div>
-
             
         </main>
 

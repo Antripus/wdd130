@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Feedback Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      h1 {
+      font-weight: 400;
+      }
+      h4 {
+      margin: 22px 0 4px;
+      color: #095484;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 3px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px #ccc; 
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      vertical-align: middle;
+      }
+      input:hover, textarea:hover {
+      outline: none;
+      border: 1px solid #095484;
+      }
+      .first-name {
+      margin-bottom: 22px;
+      }
+      span {
+      color: red;
+      }
+      th, td {
+      width: 21%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align: unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      .first-col {
+      width: 16%;
+      text-align: left;
+      }
+      table {
+      width: 100%;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      border-radius: 5px; 
+      background-color: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: #0666a3;
+      }
+      @media (min-width: 568px) {
+      th, td {
+      word-break: keep-all;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <h1>Student Evaluation</h1>
+        
+        <h4>Name: {submitter}</h4>
+        <h4>Date: {submitter_date}</h4>
+        <h4>Supervisor: {submitter_supervisor}</h4>
+        <p>Thank you for taking the time to fill in our online feedback form. {feedback}</p>
+
+        <div class="list">
+	<h4> 1.Interacts in a professional manner with coworkers and CE employees.                                                                                               <span>{1}</span></h4>
+	<h4> 2.Keeps track of inventory coming and leaving the helpdesk                                                                                                          <span>{2}</span></h4>
+	<h4> 3.Answers telephone in a polite manner                                                                                                                              <span>{3}</span></h4>
+	<h4> 4.Communicates follow-up information to the appropriate personnel.                                                                                                  <span>{4}</span></h4>
+	<h4> 5.Demonstrates advanced knowledge of helpdesk tasks and functions.                                                                                                  <span>{5}</span></h4>
+	<h4> 6.Inventory audits are accurate.                                                                                                                                    <span>{6}</span></h4>
+	<h4> 7.Employee’s conduct and dress reflect the University’s values and a commitment to the Honor Code.                                                                 <span>{7}</span></h4>
+	<h4> 8.Eager to help someone and go down to their office when necessary.                                                                                                 <span>{8}</span></h4>
+	<h4> 9.Keeps your work area and storage room clean                                                                                                                       <span>{9}</span></h4>
+	<h4> 10.Ability to be productive without supervision.                                                                                                                    <span>{10}</span></h4>
+	<h4> 11.Self-starter, initiating necessary work without being asked.                                                                                                     <span>{11}</span></h4>
+	<h4> 12.Is efficient with time spent in the office and constantly looking for ways to improve processes.                                                                 <span>{12}</span></h4>
+	<h4> 13.Reads all Jira Service Desk Tickets multiple times daily. Check emails and Teams constantly.                                                                     <span>{13}</span></h4>
+	<h4> 14.Always leave detailed notes in Jira Service Desk.                                                                                                                <span>{14}</span></h4>
+	<h4> 15.Actively contributes to tutorials and other documentation.                                                                                                       <span>{15}</span></h4>
+	<h4> 16.Regularly collaborates with other members of the team, in order to maintain efficiency.  Communicates appropriately and clearly with supervisors and coworkers.  <span>{16}</span></h4>
+	<h4> 17.Doesn’t leave work in the middle of a project or work without resolve or notice a coworker who could follow up the problem                                       <span>{17}</span></h4>
+	<h4> 18.Reports to work on time and as scheduled.                                                                                                                        <span>{18}</span></h4>
+	<h4> 19.Gives plenty of notice when needs time off.                                                                                                                      <span>{19}</span></h4>
+	<h4> 20.Describe 3 points that you would like to improve in the next work period. In which you feel you can improve?                                                    
+		<textarea rows="5"> {20}</textarea>	</h4>
+	<h4> 21. 3 gouls that you supervisor want to add you: </h4>
+        <span>
+            <li>Meta 1: llegar a tiempo </li>
+            <div>Meta 1: llegar a tiempo </div>
+        </span>		
+
+
+        </div>
+																																
+        <small>* The information given within the Feedback Form will be used for service improvement only and are strictly confidential.</small>
+       
+      </form>
+    </div>
+  </body>
+</html>
